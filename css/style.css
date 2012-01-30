@@ -204,19 +204,19 @@ table { border-collapse: collapse; border-spacing: 0; }
 body {
   font-family:'Asap', 'Helvetica Neue', sans-serif;
   background:#fff;
+  color:#111;
   padding:40px;
-  border:10px solid #333;
-  border-top:10px solid #333;
+  border-top:20px solid #111;
 }
 
 a {
-  color:#7D9AA3;
+  color:#888;
   text-decoration:none;
   font-weight:bold;
 }
 
   a:hover {
-    color:#3CDD9F;
+    color:#111;
   }
 
 h1,h2,h3,h4 {
@@ -294,6 +294,15 @@ h4 {
    These override the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  /* Style adjustments for viewports 480px and under go here */
+
+  body {
+    padding:20px;
+  }
+
+}
 
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
