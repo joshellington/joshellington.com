@@ -3,13 +3,13 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+  Developer/designer: Josh Ellington
+  Site: joshellington.com
+  Twitter: @joshellington
+  Location: Portland, Oregon
 
 /* THANKS */
-  Names (& URL): 
+  Names (& URL): http://html5boilerplate.com/
 
 /* SITE */
   Standards: HTML5, CSS3
