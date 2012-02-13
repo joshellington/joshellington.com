@@ -5,12 +5,23 @@
 
 
 $(function() {
-  build();
+  switchBorder();
 });
 
 
 
-function build() {
+function switchBorder() {
+  var body = $('body'),
+      as = $('a'),
+      newcolor = Colors.rand();
+
+  body.css('border-color', newcolor);
+  as.css('color', newcolor);
+
+  setTimeout('switchBorder()', 3000);
+}
+
+function buildSquares() {
   var squares = $('#squares'),
       windowHeight = $(document).height(),
       total = 10,
