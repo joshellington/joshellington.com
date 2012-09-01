@@ -6,6 +6,12 @@
 
 $(function() {
   switchBorder();
+
+  $('body').css('min-height', window.innerHeight - 160+'px');
+
+  $(window).resize(function() {
+    $('body').css('min-height', window.innerHeight - 160+'px');
+  });
 });
 
 
