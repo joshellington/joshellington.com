@@ -20,7 +20,7 @@ function get_instagram(cont) {
   $.getJSON('api/instagram.php', function(d) {
     cont.empty();
 
-    _.each(d.data, function(elem, index){
+    _.each(d, function(elem, index){
       elem.created_time = format_time(elem.created_time);
       log(elem.created_time);
 
