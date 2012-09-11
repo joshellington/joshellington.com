@@ -29,15 +29,19 @@
 </div> <!--! end of #container -->
 
 <script id="photo-template" type="text/x-jquery-tmpl">
-	<div class="photo" id="photo-${id}">
-		<a href="${link}" target="_blank">
-			<img src="${images.standard_resolution.url}" width="600">
+	<div class="photo" id="photo-${id}" data-id="${id}">
+		<a href="${link}" target="_blank" class="photo-link">
+			<img src="${images.standard_resolution.url}" width="600" class="main">
 		</a>
 
-		{{if caption}}
-			<h4>${caption.text}</h4>
-		{{/if}}
-		<h5>${created_time}</h5>
+		<div class="photo-info">
+			{{if caption}}
+				<h4>${caption.text}</h4>
+			{{/if}}
+			<h5>${created_time} <a href="#" data-lat="${location.latitude}" data-lng="${location.longitude}" class="open-map"><img src="img/globe.png" width="19" height="19"></a></h5>
+
+			<div style="clear:both;margin-top:20px;"><div class="map" id="map-${id}"></div></div>
+		</div>
 	</div>
 </script>
 
@@ -48,7 +52,7 @@
 <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/sugar/1.3/sugar.min.js"></script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js?23482397"></script>
 
