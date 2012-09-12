@@ -21,11 +21,12 @@
   };
 
   resizeBorder = function() {
-    var body;
+    var body, height;
     body = $('body');
-    body.css('min-height', window.innerHeight - 160 + 'px');
+    height = window.innerHeight - 160 + 'px';
+    body.css('min-height', height);
     return $(window).resize(function() {
-      return body.css('min-height', window.innerHeight - 160 + 'px');
+      return body.css('min-height', height);
     });
   };
 

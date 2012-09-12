@@ -18,8 +18,9 @@ switchBorder = ->
 
 resizeBorder = ->
   body = $('body')
+  height = window.innerHeight - 160+'px'
 
-  body.css('min-height', window.innerHeight - 160+'px')
+  body.css('min-height', height)
 
   $(window).resize ->
-    body.css('min-height', window.innerHeight - 160+'px')
+    body.css('min-height', height)
