@@ -8,7 +8,7 @@
 
   init = function() {
     resizeBorder();
-    return setTimeout(switchBorder, 3000);
+    return setInterval(switchBorder, 5000);
   };
 
   switchBorder = function() {
