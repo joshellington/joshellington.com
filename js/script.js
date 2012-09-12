@@ -7,8 +7,8 @@
   });
 
   init = function() {
-    setTimeout(switchBorder, 3000);
-    return resizeBorder();
+    resizeBorder();
+    return setTimeout(switchBorder, 3000);
   };
 
   switchBorder = function() {

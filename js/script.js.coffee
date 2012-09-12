@@ -5,8 +5,8 @@ $ ->
   init()
 
 init = ->
-  setTimeout(switchBorder, 3000)
   resizeBorder()
+  setTimeout(switchBorder, 3000)
 
 switchBorder = ->
   body = $('body')
