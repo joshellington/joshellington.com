@@ -8,7 +8,9 @@
 
   init = function() {
     resizeBorder();
-    return setInterval(switchBorder, 5000);
+    if ($('body').hasClass('home')) {
+      return setInterval(switchBorder, 5000);
+    }
   };
 
   switchBorder = function() {

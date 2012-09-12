@@ -6,7 +6,9 @@ $ ->
 
 init = ->
   resizeBorder()
-  setInterval(switchBorder, 5000)
+
+  if ($('body').hasClass('home'))
+    setInterval(switchBorder, 5000)
 
 switchBorder = ->
   body = $('body')
