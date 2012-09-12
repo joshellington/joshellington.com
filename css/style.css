@@ -33,6 +33,7 @@ time { display: block; font-size: 11px; color: #777; }
 /* BLOGGGGG */
 article.entry { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #cccccc; }
 article.entry:last-child { margin-bottom: 0; padding-bottom: 0; border: 0; }
+article.entry p code { font-size: 0.85em; }
 
 @media only screen and (max-width: 480px) { /* Style adjustments for viewports 480px and under go here */
   body { padding: 20px; border-width: 20px; }
