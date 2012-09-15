@@ -2,6 +2,8 @@
 
 /**/
 
+$black: #111;
+$accent: #DB3A29;
 $lightgrey: #eee;
 $grey: #ccc;
 $codebg: #f0f0f0;
@@ -11,10 +13,18 @@ $codebg: #f0f0f0;
 body {
   font-family:'Chivo', 'Helvetica Neue', sans-serif;
   background:#fff;
-  color:#111;
+  color:$black;
   border:40px solid #111;
   padding:40px;
   min-height:100%;
+
+  &.blog {
+    border-color:$accent;
+
+    a {
+      color:$accent;
+    }
+  }
 }
 
 a {
@@ -44,6 +54,10 @@ h1,h2,h3,h4,h5 {
 h1 {
   font-size:36px;
   margin:0 0 40px 0;
+
+  a {
+    color:#111;
+  }
 }
 
 h2 {

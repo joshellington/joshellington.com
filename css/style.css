@@ -1,7 +1,9 @@
 @import url(reset.css);
 /**/
 /**/
-body { font-family: 'Chivo', 'Helvetica Neue', sans-serif; background: #fff; color: #111; border: 40px solid #111; padding: 40px; min-height: 100%; }
+body { font-family: 'Chivo', 'Helvetica Neue', sans-serif; background: #fff; color: #111111; border: 40px solid #111; padding: 40px; min-height: 100%; }
+body.blog { border-color: #db3a29; }
+body.blog a { color: #db3a29; }
 
 a { color: #888; text-decoration: none; }
 a:hover { color: #cccccc !important; text-decoration: underline; }
@@ -13,6 +15,7 @@ h1, h2, h3, h4, h5 { font-weight: normal; margin: 0; padding: 0; }
 #container { max-width: 600px; }
 
 h1 { font-size: 36px; margin: 0 0 40px 0; }
+h1 a { color: #111; }
 
 h2 { font-size: 24px; margin-bottom: 20px; }
 h2 span { font-size: 13px; color: #aaa; }
