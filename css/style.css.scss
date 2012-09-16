@@ -188,16 +188,18 @@ body.blog {
     .search-text {
       border:0;outline:0;
 
-      background:white;
-      border:1px solid $accent;
+      background:$accent;
       padding:8px 10px;
       font-family: $font;
       font-size:15px;
-      color:$black;
+      color:white;
 
       &:focus {
-        border-color:$accent;
       }
+    }
+
+    input::-webkit-input-placeholder {
+      color:white;
     }
   }
 }

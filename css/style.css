@@ -50,8 +50,8 @@ body.blog header { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px
 body.blog #nav { display: none; overflow: hidden; margin: 0 0 20px; padding: 0; }
 body.blog #nav li { display: inline; float: left; padding-right: 10px; margin: 0; }
 body.blog #search { display: none; margin-top: 10px; }
-body.blog #search .search-text { border: 0; outline: 0; background: white; border: 1px solid #db3a29; padding: 8px 10px; font-family: "Chivo", "Helvetica Neue", sans-serif; font-size: 15px; color: #111111; }
-body.blog #search .search-text:focus { border-color: #db3a29; }
+body.blog #search .search-text { border: 0; outline: 0; background: #db3a29; padding: 8px 10px; font-family: "Chivo", "Helvetica Neue", sans-serif; font-size: 15px; color: white; }
+body.blog #search input::-webkit-input-placeholder { color: white; }
 
 @media only screen and (max-width: 480px) { /* Style adjustments for viewports 480px and under go here */
   body { padding: 20px; border-width: 10px; }
