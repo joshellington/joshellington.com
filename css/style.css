@@ -1,7 +1,8 @@
 @import url(reset.css);
+@import url(fonts.css);
 /**/
 /**/
-body { font-family: 'Chivo', 'Helvetica Neue', sans-serif; background: #fff; color: #111111; border: 40px solid #111; padding: 40px; min-height: 100%; }
+body { font-family: "Chivo", "Helvetica Neue", sans-serif; background: #fff; color: #111111; border: 40px solid #111; padding: 40px; min-height: 100%; }
 body.blog { border-color: #db3a29; }
 body.blog a { color: #db3a29; }
 
@@ -10,9 +11,9 @@ a:hover { color: #cccccc !important; text-decoration: underline; }
 
 p { font-size: 15px; line-height: 1.4; }
 
-h1, h2, h3, h4, h5 { font-weight: normal; margin: 0; padding: 0; }
+.small { font-size: 11px; }
 
-#container { max-width: 600px; }
+h1, h2, h3, h4, h5 { font-weight: normal; margin: 0; padding: 0; }
 
 h1 { font-size: 36px; margin: 0 0 40px 0; }
 h1 a { color: #111; }
@@ -29,6 +30,10 @@ h4 { color: #777; }
 
 time { display: block; font-size: 11px; color: #777; }
 
+#container { max-width: 600px; }
+
+header { padding-bottom: 20px; border-bottom: 1px solid #eeeeee; }
+
 .play { overflow: hidden; }
 
 .work { margin: 40px 0; }
@@ -37,8 +42,18 @@ time { display: block; font-size: 11px; color: #777; }
 article.post { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #cccccc; }
 article.post:last-child { margin-bottom: 0; padding-bottom: 0; border: 0; }
 article.post p code { font-size: 0.85em; }
+article.post .post-meta .small { display: inline-block; margin: 0; padding: 0 0 0 10px; }
+article.post .post-meta time, article.post .post-meta span { display: inline-block; }
+
+body.blog h4 { margin-bottom: 0; }
+body.blog header { margin-bottom: 20px; }
+body.blog #nav { display: none; overflow: hidden; margin: 0 0 20px; padding: 0; }
+body.blog #nav li { display: inline; float: left; padding-right: 10px; margin: 0; }
+body.blog #search { display: none; margin-top: 10px; }
+body.blog #search .search-text { border: 0; outline: 0; background: white; border: 1px solid #db3a29; padding: 8px 10px; font-family: "Chivo", "Helvetica Neue", sans-serif; font-size: 15px; color: #111111; }
+body.blog #search .search-text:focus { border-color: #db3a29; }
 
 @media only screen and (max-width: 480px) { /* Style adjustments for viewports 480px and under go here */
-  body { padding: 20px; border-width: 20px; }
+  body { padding: 20px; border-width: 10px; }
   img { max-width: 100%; }
   p { font-size: 13px; } }

@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "fonts.css";
 
 /**/
 
@@ -7,11 +8,12 @@ $accent: #DB3A29;
 $lightgrey: #eee;
 $grey: #ccc;
 $codebg: #f0f0f0;
+$font: 'Chivo', 'Helvetica Neue', sans-serif;
 
 /**/
 
 body {
-  font-family:'Chivo', 'Helvetica Neue', sans-serif;
+  font-family:$font;
   background:#fff;
   color:$black;
   border:40px solid #111;
@@ -42,13 +44,13 @@ p {
   line-height:1.4;
 }
 
+.small {
+  font-size:11px;
+}
+
 h1,h2,h3,h4,h5 {
   font-weight:normal;
   margin:0;padding:0;
-}
-
-#container {
-  max-width:600px;
 }
 
 h1 {
@@ -98,6 +100,15 @@ time {
   color:#777;
 }
 
+#container {
+  max-width:600px;
+}
+
+header {
+  padding-bottom:20px;
+  border-bottom:1px solid $lightgrey;
+}
+
 .play {
   overflow:hidden;
 }
@@ -127,8 +138,63 @@ article.post {
       font-size:0.85em;
     }
   }
+
+  .post-meta {
+    .small {
+      display:inline-block;
+      margin:0;
+      padding:0 0 0 10px;
+    }
+
+    time, span {
+      display:inline-block;
+    }
+  }
 }
 
+body.blog {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  #nav {
+    display: none;
+    overflow: hidden;
+    margin:0 0 20px;
+    padding:0;
+
+    li {
+      display: inline;
+      float: left;
+      padding-right:10px;
+      margin:0;
+    }
+  }
+
+  #search {
+    display:none;
+    margin-top:10px;
+
+    .search-text {
+      border:0;outline:0;
+
+      background:white;
+      border:1px solid $accent;
+      padding:8px 10px;
+      font-family: $font;
+      font-size:15px;
+      color:$black;
+
+      &:focus {
+        border-color:$accent;
+      }
+    }
+  }
+}
 
 
 
@@ -138,7 +204,7 @@ article.post {
 
   body {
     padding:20px;
-    border-width:20px;
+    border-width:10px;
   }
 
   img {
