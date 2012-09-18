@@ -1,8 +1,19 @@
+root = exports ? this
+
+root.Shade =
+  random: (time = 2000) ->
+    setTimeout((->
+      $('.shade').each ->
+        $(this).css 'color', Colors.rand()
+
+        Shade.random time
+    ), time)
 
 
 $ ->
 
   init()
+  
 
 init = ->
   resizeBorder()
@@ -26,3 +37,5 @@ resizeBorder = ->
 
   $(window).resize ->
     body.css('min-height', height)
+
+delay = (ms, func) -> setTimeout func, ms

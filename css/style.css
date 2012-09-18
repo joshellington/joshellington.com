@@ -44,6 +44,7 @@ article.post p code { font-size: 0.85em; }
 article.post .video iframe { width: 600px; max-width: 100%; height: 450px; }
 article.post .post-meta .small { display: inline-block; margin: 0; padding: 0 0 0 10px; }
 article.post .post-meta time, article.post .post-meta span { display: inline-block; }
+article.post blockquote { background: #db3a29; color: white; padding: 12px; margin: 10px 0; }
 
 body.blog h4 { margin-bottom: 0; }
 body.blog header { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #cccccc; }

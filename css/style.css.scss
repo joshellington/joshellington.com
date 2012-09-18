@@ -6,6 +6,7 @@
 
 $black: #111;
 $accent: #DB3A29;
+$accent_text: #fff;
 $lightgrey: #eee;
 $grey: #ccc;
 $codebg: #f0f0f0;
@@ -153,6 +154,13 @@ article.post {
     time, span {
       display:inline-block;
     }
+  }
+
+  blockquote {
+    background:$accent;
+    color:$accent_text;
+    padding:12px;
+    margin:10px 0;
   }
 }
 
