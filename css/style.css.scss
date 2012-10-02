@@ -5,6 +5,7 @@
 /**/
 
 $black: #111;
+$home_accent: #2D8D95;
 $accent: #DB3A29;
 $accent_text: #fff;
 $lightgrey: #eee;
@@ -19,7 +20,7 @@ body {
   font-family:$font;
   background:#fff;
   color:$black;
-  border:40px solid #111;
+  border:40px solid $home_accent;
   padding:40px;
   min-height:100%;
 
@@ -33,7 +34,7 @@ body {
 }
 
 a {
-  color:#888;
+  color:$home_accent;
   text-decoration:none;
 
   &:hover {
@@ -59,10 +60,6 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   font-size:36px;
   margin:0 0 40px 0;
-
-  a {
-    color:#111;
-  }
 }
 
 h2 {

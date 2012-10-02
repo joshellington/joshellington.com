@@ -3,11 +3,11 @@
 /*@import "prettify.css";*/
 /**/
 /**/
-body { font-family: "Chivo", "Helvetica Neue", sans-serif; background: #fff; color: #111111; border: 40px solid #111; padding: 40px; min-height: 100%; }
+body { font-family: "Chivo", "Helvetica Neue", sans-serif; background: #fff; color: #111111; border: 40px solid #2d8d95; padding: 40px; min-height: 100%; }
 body.blog { border-color: #db3a29; }
 body.blog a { color: #db3a29; }
 
-a { color: #888; text-decoration: none; }
+a { color: #2d8d95; text-decoration: none; }
 a:hover { color: #cccccc !important; text-decoration: underline; }
 
 p { font-size: 15px; line-height: 1.4; }
@@ -17,7 +17,6 @@ p { font-size: 15px; line-height: 1.4; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; padding: 0; }
 
 h1 { font-size: 36px; margin: 0 0 40px 0; }
-h1 a { color: #111; }
 
 h2 { font-size: 24px; margin-bottom: 20px; }
 h2 span { font-size: 13px; color: #aaa; }
