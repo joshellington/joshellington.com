@@ -9,6 +9,7 @@ $accent: #DB3A29;
 $accent_text: #fff;
 $lightgrey: #eee;
 $grey: #ccc;
+$darkgrey: #aaa;
 $codebg: #f0f0f0;
 $font: 'Chivo', 'Helvetica Neue', sans-serif;
 
@@ -50,7 +51,7 @@ p {
   font-size:11px;
 }
 
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5,h6 {
   font-weight:normal;
   margin:0;padding:0;
 }
@@ -71,6 +72,10 @@ h2 {
   span {
     font-size:13px;
     color:#aaa;
+  }
+
+  &.last {
+    margin-bottom:0;
   }
 }
 
@@ -96,6 +101,12 @@ h4 {
   color:#777;
 }
 
+h6 {
+  &.sorry {
+    font-size:11px;
+  }
+}
+
 time {
   display: block;
   font-size:11px;
@@ -115,6 +126,15 @@ time {
 
 .work {
   margin:40px 0;
+}
+
+.contact {
+  margin-bottom:40px;
+}
+
+footer {
+  padding-top:40px;
+  color:$darkgrey;
 }
 
 /* BLOGGGGG */
