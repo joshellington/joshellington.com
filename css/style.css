@@ -4,10 +4,10 @@
 /**/
 /**/
 body {
-  font-family: "Chivo", "Helvetica Neue", sans-serif;
+  font-family: "Playfair Display", "Helvetica Neue", sans-serif;
   background: #fff;
   color: #111111;
-  border: 40px solid #2d8d95;
+  border-left: 15px solid #e36235;
   padding: 40px;
   min-height: 100%; }
   body.blog {
@@ -16,11 +16,11 @@ body {
       color: #db3a29; }
 
 a {
-  color: #2d8d95;
-  text-decoration: none; }
+  color: #e36235;
+  text-decoration: none;
+  transition: 0.3s all; }
   a:hover {
-    color: #cccccc !important;
-    text-decoration: underline; }
+    color: #cccccc !important; }
 
 p {
   font-size: 15px;
@@ -28,6 +28,13 @@ p {
 
 .small {
   font-size: 11px; }
+
+hr {
+  display: block;
+  width: 10%;
+  margin: 0 0 40px;
+  border: 0;
+  border-bottom: 1px solid #111111; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -39,7 +46,7 @@ h1 {
   margin: 0 0 40px 0; }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px; }
   h2 span {
     font-size: 13px;
@@ -141,7 +148,7 @@ body.blog #search {
     outline: 0;
     background: #db3a29;
     padding: 8px 10px;
-    font-family: "Chivo", "Helvetica Neue", sans-serif;
+    font-family: "Playfair Display", "Helvetica Neue", sans-serif;
     font-size: 15px;
     color: white; }
   body.blog #search input::-webkit-input-placeholder {

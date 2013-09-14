@@ -6,9 +6,10 @@ $ ->
 
 init = ->
   resizeBorder()
+  $(window).resize(resizeBorder)
 
-  if ($('body').hasClass('home'))
-    setInterval(switchBorder, 5000)
+  # if ($('body').hasClass('home'))
+    # setInterval(switchBorder, 5000)
 
 switchBorder = ->
   body = $('body')
@@ -20,7 +21,7 @@ switchBorder = ->
 
 resizeBorder = ->
   body = $('body')
-  height = window.innerHeight - 160+'px'
+  height = window.innerHeight - parseInt(body.css('padding')) * 2
 
   body.css('min-height', height)
 
