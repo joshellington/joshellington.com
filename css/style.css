@@ -3,11 +3,21 @@
 /*@import "prettify.css";*/
 /**/
 /**/
+::-moz-selection {
+  background: #2bbdf1;
+  color: #222222;
+  text-shadow: none; }
+
+::selection {
+  background: #2bbdf1;
+  color: #222222;
+  text-shadow: none; }
+
+/**/
 body {
   font-family: "Playfair Display", "Helvetica Neue", sans-serif;
-  background: #fff;
-  color: #111111;
-  border-left: 15px solid #e36235;
+  background: #eee;
+  color: #222222;
   padding: 40px;
   min-height: 100%; }
   body.blog {
@@ -15,10 +25,22 @@ body {
     body.blog a {
       color: #db3a29; }
 
+#background {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+
 a {
-  color: #e36235;
+  color: #2bbdf1;
   text-decoration: none;
-  transition: 0.3s all; }
+  transition: 0.15s all;
+  font-weight: 900; }
   a:hover {
     color: #cccccc !important; }
 
@@ -32,18 +54,23 @@ p {
 hr {
   display: block;
   width: 10%;
-  margin: 0 0 40px;
+  margin: 0 auto 40px;
   border: 0;
-  border-bottom: 1px solid #111111; }
+  border-bottom: 1px solid #222222; }
+
+strong {
+  font-weight: 900; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  line-height: 1.3; }
 
 h1 {
-  font-size: 36px;
-  margin: 0 0 40px 0; }
+  font-size: 42px;
+  margin: 0 0 40px 0;
+  font-weight: 900; }
 
 h2 {
   font-size: 28px;
@@ -80,16 +107,23 @@ time {
   color: #777; }
 
 #container {
-  max-width: 600px; }
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 .play {
   overflow: hidden; }
 
 .work {
   margin: 40px 0; }
-
-.contact {
-  margin-bottom: 40px; }
 
 footer {
   padding-top: 40px;
@@ -160,8 +194,25 @@ body.blog #search {
     padding: 20px;
     border-width: 10px; }
 
+  hr {
+    margin: 0 0 40px; }
+
+  #container {
+    text-align: left;
+    position: relative;
+    width: auto;
+    margin: auto;
+    top: auto;
+    left: auto;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0); }
+
   img {
     max-width: 100%; }
+
+  h1 {
+    font-size: 24px; }
 
   p {
     font-size: 13px; }

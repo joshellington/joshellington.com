@@ -4,8 +4,8 @@
 
 /**/
 
-$black: #111;
-$home_accent: #e36235;
+$black: #222;
+$home_accent: #2bbdf1;
 $accent: #DB3A29;
 $accent_text: #fff;
 $lightgrey: #eee;
@@ -16,11 +16,16 @@ $font: 'Playfair Display', 'Helvetica Neue', sans-serif;
 
 /**/
 
+::-moz-selection { background: $home_accent; color: $black; text-shadow: none; }
+::selection { background: $home_accent; color: $black; text-shadow: none; }
+
+/**/
+
 body {
   font-family:$font;
-  background:#fff;
+  background:#eee;
   color:$black;
-  border-left:15px solid $home_accent;
+  // border-left:15px solid $home_accent;
   padding:40px;
   min-height:100%;
 
@@ -33,10 +38,23 @@ body {
   }
 }
 
+#background {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 a {
   color:$home_accent;
   text-decoration:none;
-  transition: 0.3s all;
+  transition: 0.15s all;
+  font-weight: 900;
 
   &:hover {
     color:$grey !important;
@@ -55,19 +73,25 @@ p {
 hr {
   display: block;
   width: 10%;
-  margin: 0 0 40px;
+  margin: 0 auto 40px;
   border:0;
   border-bottom:1px solid $black;
+}
+
+strong {
+  font-weight: 900;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-weight:normal;
   margin:0;padding:0;
+  line-height: 1.3;
 }
 
 h1 {
-  font-size:36px;
+  font-size:42px;
   margin:0 0 40px 0;
+  font-weight: 900;
 }
 
 h2 {
@@ -120,8 +144,15 @@ time {
 
 #container {
   max-width: 600px;
-  // margin: 0 auto;
-  // text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 
 .play {
@@ -136,7 +167,7 @@ time {
 }
 
 .contact {
-  margin-bottom:40px;
+  // margin-bottom:40px;
 }
 
 footer {
@@ -251,8 +282,27 @@ body.blog {
     border-width:10px;
   }
 
+  hr {
+    margin: 0 0 40px;
+  }
+
+  #container {
+    text-align: left;
+    position: relative;
+    width: auto;
+    margin: auto;
+    top: auto; left: auto;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+  }
+
   img {
     max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
   }
 
   p {

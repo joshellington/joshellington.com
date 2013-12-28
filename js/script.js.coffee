@@ -5,11 +5,19 @@ $ ->
   
 
 init = ->
-  resizeBorder()
+  setBg()
   $(window).resize(resizeBorder)
 
   # if ($('body').hasClass('home'))
     # setInterval(switchBorder, 5000)
+
+setBg = ->
+  url = 'http://api.tumblr.com/v2/blog/nos.twnsnd.co/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?'
+  background = $('#background')
+
+  $.getJSON url, (d) ->
+    post = _.sample(d.response.posts)
+    background.css('background-image', 'url('+post.photos[0].original_size.url+')')
 
 switchBorder = ->
   body = $('body')
