@@ -28,7 +28,7 @@ body {
 #background {
   background: no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.05;
+  opacity: 0.1;
   position: absolute;
   top: 0;
   left: 0;
@@ -125,6 +125,11 @@ time {
 .work {
   margin: 40px 0; }
 
+.contact a svg path {
+  fill: #222222; }
+.contact a svg:hover path {
+  fill: #2bbdf1; }
+
 footer {
   padding-top: 40px;
   color: #aaaaaa; }
@@ -188,7 +193,7 @@ body.blog #search {
   body.blog #search input::-webkit-input-placeholder {
     color: white; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px), (max-height: 500px) {
   /* Style adjustments for viewports 480px and under go here */
   body {
     padding: 20px;

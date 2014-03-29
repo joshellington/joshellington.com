@@ -21,11 +21,22 @@ $font: 'Playfair Display', 'Helvetica Neue', sans-serif;
 
 /**/
 
+//
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+// 
+
 body {
   font-family:$font;
   background:#eee;
   color:$black;
-  // border-left:15px solid $home_accent;
   padding:40px;
   min-height:100%;
 
@@ -41,7 +52,7 @@ body {
 #background {
   background: no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.05;
+  opacity: 0.1;
   position: absolute;
   top: 0;
   left: 0;
@@ -167,7 +178,17 @@ time {
 }
 
 .contact {
-  // margin-bottom:40px;
+  a svg {
+    path {
+      fill: $black;
+    }
+  }
+
+  a svg:hover {
+    path {
+      fill: $home_accent;
+    }
+  }
 }
 
 footer {
@@ -274,7 +295,7 @@ body.blog {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px), (max-height: 500px) {
   /* Style adjustments for viewports 480px and under go here */
 
   body {
