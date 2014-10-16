@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3; }
 
 h1 {
-  font-size: 42px;
+  font-size: 36px;
   margin: 0 0 40px 0;
   font-weight: 900; }
 
@@ -107,6 +107,12 @@ time {
   color: #777; }
 
 #container {
+  max-width: 600px; }
+
+body.blog #container iframe {
+  max-width: 100%; }
+
+.center {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
@@ -131,7 +137,7 @@ time {
   fill: #2bbdf1; }
 
 footer {
-  padding-top: 40px;
+  padding-top: 0;
   color: #aaaaaa; }
 
 /* BLOGGGGG */
@@ -139,10 +145,6 @@ article.post {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #cccccc; }
-  article.post:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border: 0; }
   article.post p code {
     font-size: 0.85em; }
   article.post .video iframe {

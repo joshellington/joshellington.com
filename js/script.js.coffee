@@ -5,8 +5,9 @@ $ ->
   
 
 init = ->
-  setBg()
-  $(window).resize(resizeBorder)
+  if $('body').hasClass('home')
+    setBg()
+  # $(window).resize(resizeBorder)
 
   # if ($('body').hasClass('home'))
     # setInterval(switchBorder, 5000)

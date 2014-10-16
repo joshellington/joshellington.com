@@ -6,8 +6,9 @@
   });
 
   init = function() {
-    setBg();
-    return $(window).resize(resizeBorder);
+    if ($('body').hasClass('home')) {
+      return setBg();
+    }
   };
 
   setBg = function() {

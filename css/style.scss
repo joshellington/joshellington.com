@@ -100,7 +100,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size:42px;
+  font-size:36px;
   margin:0 0 40px 0;
   font-weight: 900;
 }
@@ -155,6 +155,12 @@ time {
 
 #container {
   max-width: 600px;
+}
+
+body.blog #container iframe { max-width: 100%; }
+
+.center {
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
   width: 50%;
@@ -192,7 +198,7 @@ time {
 }
 
 footer {
-  padding-top:40px;
+  padding-top: 0;
   color:$darkgrey;
 }
 
@@ -204,9 +210,9 @@ article.post {
   border-bottom:1px solid $grey;
 
   &:last-child {
-    margin-bottom:0;
-    padding-bottom:0;
-    border:0;
+    // margin-bottom:0;
+    // padding-bottom:0;
+    // border:0;
   }
 
   p {
