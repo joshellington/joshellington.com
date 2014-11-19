@@ -1,15 +1,17 @@
 @import "reset.css";
+@import "fonts/font.css";
 
 /**/
 
 $black: #222;
-$accent: #dadada;
-$font: 'Inconsolata', sans-serif;
+$accent: #1fcc7a;
+$contrast_accent: #fff;
+$font: 'San Francisco Display', sans-serif;
 
 /**/
 
-::-moz-selection { background: $accent; color: $black; text-shadow: none; }
-::selection { background: $accent; color: $black; text-shadow: none; }
+::-moz-selection { background: $contrast_accent; color: $black; text-shadow: none; }
+::selection { background: $contrast_accent; color: $black; text-shadow: none; }
 
 /**/
 
@@ -28,11 +30,12 @@ $font: 'Inconsolata', sans-serif;
 body {
   font-family: $font;
   background: $accent;
-  color: $black;
+  color: white;
   padding: 40px;
   line-height: 1.3;
   min-height: 100%;
   font-size: 14px;
+  border-top: 10px solid white;
 }
 
 .background {
@@ -66,18 +69,29 @@ h1,h2,h3,h4,h5,p {
 }
 
 h1 {
-  margin: 0 0 40px;
-  font-size: 24px;
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 h2 {
-  margin: 0 0 20px;
+  margin: 0 0 50px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 h3 {
   margin: 0 0 20px;
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 700;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 5px solid white;
+    }
+  }
 }
 
 h4 {
@@ -97,14 +111,17 @@ h4 {
 
 p {
   font-size: 14px;
+  font-weight: 200;
+  line-height: 1.5;
 }
 
 a {
-  color: $black;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
 
   &:hover {
-    color: $black;
-    text-decoration: none;
+    color: black;
   }
 
   &.open {
@@ -127,21 +144,54 @@ header {
   z-index: 1;
 }
 
-header nav {
-  ul {
-    padding-bottom: 20px;
-  }
+header.sub {
+  margin-bottom: 50px;
 
   ul li {
-    font-size: 11px;
     display: inline-block;
+    margin-right: 10px;
+
+    a {
+      border: 0;
+    }
+
+    a:hover {
+      color: white;
+      border-bottom: 2px solid white;
+    }
+
+    &.active {
+      a {
+        color: $black;
+      }
+    }
+  }
+}
+
+nav.home {
+  margin: 40px 0 0;
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  h3 a {
+    color: white;
+    border: 0;
+
+    &:hover {
+      border-bottom: 5px solid white;
+    }
   }
 }
 
 .container {
-  max-width: 550px;
   position: relative;
   z-index: 1;
+
+  &.inner {
+    max-width: 750px;
+  }
 }
 
 .section {
@@ -153,8 +203,10 @@ header nav {
   margin: 0;
 
   li {
-    list-style-type: square;
+    font-size: 18px;
+    list-style-type: circle;
     padding: 0 0 20px 0;
+    margin: 0 0 0 20px;
 
     &:last-child {
       padding: 0 0 0 0;
@@ -162,12 +214,19 @@ header nav {
 
     a {
       display: inline-block;
+      font-weight: 500;
     }
 
     p {
       margin-top: 10px;
     }
   }
+}
+
+.container.bio ul li {
+  font-size: 18px;
+  list-style: none;
+  margin: 0;
 }
 
 img {
@@ -184,7 +243,10 @@ img {
 }
 
 footer {
-  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  font-size: 10px;
 }
 
 @media only screen and (max-width: 480px), (max-height: 500px) {

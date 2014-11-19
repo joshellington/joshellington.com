@@ -1,5 +1,5 @@
 (function() {
-  var setBg;
+  var setBg, setNavColors;
 
   $(function() {
     setBg();
@@ -22,6 +22,20 @@
       post = d.response.posts[Math.floor(Math.random() * d.response.posts.length)];
       return background.css('background-image', 'url(' + post.photos[0].original_size.url + ')');
     });
+  };
+
+  setNavColors = function() {
+    var color, colors, i, _i, _len, _results;
+    colors = Please.make_color({
+      greyscale: true,
+      colors_returned: $('nav h3 a').length
+    });
+    _results = [];
+    for (i = _i = 0, _len = colors.length; _i < _len; i = ++_i) {
+      color = colors[i];
+      _results.push($('nav h3 a').eq(i).css('color', color));
+    }
+    return _results;
   };
 
 }).call(this);

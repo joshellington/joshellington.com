@@ -1,25 +1,27 @@
 @import url(reset.css);
+@import url(fonts/font.css);
 /**/
 /**/
 ::-moz-selection {
-  background: #dadada;
+  background: white;
   color: #222222;
   text-shadow: none; }
 
 ::selection {
-  background: #dadada;
+  background: white;
   color: #222222;
   text-shadow: none; }
 
 /**/
 body {
-  font-family: "Inconsolata", sans-serif;
-  background: #dadada;
-  color: #222222;
+  font-family: "San Francisco Display", sans-serif;
+  background: #1fcc7a;
+  color: white;
   padding: 40px;
   line-height: 1.3;
   min-height: 100%;
-  font-size: 14px; }
+  font-size: 14px;
+  border-top: 10px solid white; }
 
 .background {
   background-position: center center;
@@ -48,16 +50,23 @@ h1, h2, h3, h4, h5, p {
   font-weight: normal; }
 
 h1 {
-  margin: 0 0 40px;
-  font-size: 24px; }
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 40px; }
 
 h2 {
-  margin: 0 0 20px;
-  font-size: 18px; }
+  margin: 0 0 50px;
+  font-size: 18px;
+  font-weight: 400; }
 
 h3 {
   margin: 0 0 20px;
-  font-size: 14px; }
+  font-size: 24px;
+  font-weight: 700; }
+  h3 a {
+    text-decoration: none; }
+    h3 a:hover {
+      border-bottom: 5px solid white; }
 
 h4 {
   margin: 0 0 20px;
@@ -72,13 +81,16 @@ h4 {
     margin-left: -40px; }
 
 p {
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.5; }
 
 a {
-  color: #222222; }
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white; }
   a:hover {
-    color: #222222;
-    text-decoration: none; }
+    color: black; }
   a.open {
     background: white;
     font-size: 11px;
@@ -94,16 +106,34 @@ header {
   position: relative;
   z-index: 1; }
 
-header nav ul {
-  padding-bottom: 20px; }
-header nav ul li {
-  font-size: 11px;
-  display: inline-block; }
+header.sub {
+  margin-bottom: 50px; }
+  header.sub ul li {
+    display: inline-block;
+    margin-right: 10px; }
+    header.sub ul li a {
+      border: 0; }
+    header.sub ul li a:hover {
+      color: white;
+      border-bottom: 2px solid white; }
+    header.sub ul li.active a {
+      color: #222222; }
+
+nav.home {
+  margin: 40px 0 0; }
+  nav.home h3 {
+    margin-bottom: 10px; }
+  nav.home h3 a {
+    color: white;
+    border: 0; }
+    nav.home h3 a:hover {
+      border-bottom: 5px solid white; }
 
 .container {
-  max-width: 550px;
   position: relative;
   z-index: 1; }
+  .container.inner {
+    max-width: 750px; }
 
 .section {
   display: none; }
@@ -112,20 +142,31 @@ header nav ul li {
   padding: 0;
   margin: 0; }
   .container ul li {
-    list-style-type: square;
-    padding: 0 0 20px 0; }
+    font-size: 18px;
+    list-style-type: circle;
+    padding: 0 0 20px 0;
+    margin: 0 0 0 20px; }
     .container ul li:last-child {
       padding: 0 0 0 0; }
     .container ul li a {
-      display: inline-block; }
+      display: inline-block;
+      font-weight: 500; }
     .container ul li p {
       margin-top: 10px; }
+
+.container.bio ul li {
+  font-size: 18px;
+  list-style: none;
+  margin: 0; }
 
 img {
   max-width: 100%; }
 
 footer {
-  margin-top: 40px; }
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  font-size: 10px; }
 
 @media only screen and (max-width: 480px), (max-height: 500px) {
   body {
