@@ -1,48 +1,27 @@
 (function() {
-  var delay, init, resizeBorder, setBg, switchBorder;
+  var setBg;
 
   $(function() {
-    return init();
+    setBg();
+    return $('.open').click(function(e) {
+      var section;
+      section = $(e.currentTarget).attr('href');
+      $(e.currentTarget).hide(0, function() {
+        return $(section).show();
+      });
+      return e.preventDefault();
+    });
   });
-
-  init = function() {
-    if ($('body').hasClass('home')) {
-      return setBg();
-    }
-  };
 
   setBg = function() {
     var background, url;
     url = 'http://api.tumblr.com/v2/blog/nos.twnsnd.co/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
-    background = $('#background');
+    background = $('.background');
     return $.getJSON(url, function(d) {
       var post;
-      post = _.sample(d.response.posts);
+      post = d.response.posts[Math.floor(Math.random() * d.response.posts.length)];
       return background.css('background-image', 'url(' + post.photos[0].original_size.url + ')');
     });
-  };
-
-  switchBorder = function() {
-    var as, body, newcolor;
-    body = $('body');
-    as = $('a');
-    newcolor = Colors.rand();
-    body.css('border-color', newcolor);
-    return as.css('color', newcolor);
-  };
-
-  resizeBorder = function() {
-    var body, height;
-    body = $('body');
-    height = window.innerHeight - parseInt(body.css('padding')) * 2;
-    body.css('min-height', height);
-    return $(window).resize(function() {
-      return body.css('min-height', height);
-    });
-  };
-
-  delay = function(ms, func) {
-    return setTimeout(func, ms);
   };
 
 }).call(this);
