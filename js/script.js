@@ -11,7 +11,20 @@
       });
       return e.preventDefault();
     });
-    return $(document).pjax('a', '#pjax-container');
+    $(document).pjax('a', '#pjax-container');
+    NProgress.configure({
+      showSpinner: false
+    });
+    $(document).on('pjax:clicked', function() {
+      console.log('pjax clicked');
+      return NProgress.start();
+    });
+    $(document).on('pjax:complete', function() {
+      return NProgress.done();
+    });
+    return $(document).on('pjax:end', function() {
+      return NProgress.remove();
+    });
   });
 
   setBg = function() {

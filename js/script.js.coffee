@@ -11,6 +11,18 @@ $ ->
     e.preventDefault()
 
   $(document).pjax('a', '#pjax-container')
+  
+  NProgress.configure({ showSpinner: false })
+  $(document).on 'pjax:clicked', ->
+    console.log 'pjax clicked'
+    NProgress.start()
+
+  $(document).on 'pjax:complete', ->
+    NProgress.done()
+
+  $(document).on 'pjax:end', ->
+    NProgress.remove()
+
 
 setBg = ->
   url = 'http://api.tumblr.com/v2/blog/nos.twnsnd.co/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?'
