@@ -7,7 +7,7 @@ require('_nav.php');
 ?>
 
   <div class="container inner">
-    <h1>A few of my skills.</h1>
+    <h1>My skills.</h1>
     <h2>Although I'm a quick learner, you'll find a list below of technologies and platforms I'm comfortable with at the moment.</h2>
 
     <ul>

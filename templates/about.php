@@ -9,6 +9,8 @@ require('_nav.php');
   <div class="container inner bio">
     <h1>A little bit about myself.</h1>
 
+    <img src="img/josh-ellington.jpg" class="profile" alt="Josh Ellington">
+
     <ul>
       <li>I've strategized, researched, designed, developed and launched experiences for over 10 years in a variety of capacities.</li>
       <li>I've worked with teams, brands and products small and large.</li>

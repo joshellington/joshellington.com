@@ -5,10 +5,10 @@ if (!$this->data['pjax']) {
 ?>
 
   <div class="container">
-    <h1>Hey good looking, I'm Josh Ellington. I'm a self-taught 26-year-old designer/developer with an affinity for good design, clean code and thoughtful experiences. I currently reside in the great Portland, Oregon.</h1>
+    <h1>Hi there, I'm Josh Ellington, a self-taught 26-year-old designer/developer with an affinity for good design, clean code and thoughtful experiences. I currently reside in the beautiful Portland, Oregon and am available for freelance opportunities.</h1>
 
     <nav class="home">
-      <h3><a href="/bio">Read the bio &rarr;</a></h3>
+      <h3><a href="/about">Get to know me &rarr;</a></h3>
       <h3><a href="/projects">Check out my pet projects &rarr;</a></h3>
       <h3><a href="/work">View my work &rarr;</a></h3>
       <h3><a href="/skills">See my skills &rarr;</a></h3>

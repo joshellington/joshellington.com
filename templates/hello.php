@@ -17,10 +17,6 @@ require('_nav.php');
       <li><a href="http://twitter.com/joshellington">Twitter</a></li>
       <li><a href="http://instagram.com/joshellington">Instagram</a></li>
     </ul>
-
-    <br><br><br>
-    <h2>Best,<br>Josh</h2>
-    <img src="img/josh-ellington.jpg" class="profile" alt="Josh Ellington">
   </div>
 
 <?php

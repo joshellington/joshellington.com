@@ -1,8 +1,8 @@
-</div>
+  </div>
 
-<footer>
-  <p>Handcrafted in the USA with the help of Sublime Text, GitHub and all you lovely open source maintainers.</p>
-</footer>
+  <footer>
+    <p>Handcrafted in the USA with the help of Sublime Text, GitHub and all you lovely open source maintainers.</p>
+  </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
