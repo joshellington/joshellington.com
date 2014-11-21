@@ -1,4 +1,8 @@
-<?php require('_header.php'); ?>
+<?php
+if (!$this->data['pjax']) {
+  require('_header.php');
+}
+?>
 
   <div class="container">
     <h1>Hey good looking, I'm Josh Ellington. I'm a self-taught 26-year-old designer/developer with an affinity for good design, clean code and thoughtful experiences. I currently reside in the great Portland, Oregon.</h1>
@@ -12,4 +16,8 @@
     </nav>
   </div>
 
-<?php require('_footer.php'); ?>
+<?php
+if (!$this->data['pjax']) {
+  require('_footer.php');
+}
+?>

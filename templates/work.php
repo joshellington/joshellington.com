@@ -1,5 +1,8 @@
 <?php
-require('_header.php');
+if (!$this->data['pjax']) {
+  require('_header.php');
+}
+
 require('_nav.php');
 ?>
 
@@ -45,4 +48,8 @@ require('_nav.php');
     </ul>
   </div>
 
-<?php require('_footer.php'); ?>
+<?php
+if (!$this->data['pjax']) {
+  require('_footer.php');
+}
+?>

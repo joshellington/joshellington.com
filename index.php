@@ -8,7 +8,8 @@ $app->get('/', function () use ($app) {
 });
 
 $app->get('/:slug', function ($slug) use ($app) {
-  $app->render($slug.'.php', array('slug' => $slug));
+  $pjax = $app->request->headers->get('X-PJAX');
+  $app->render($slug.'.php', array('slug' => $slug, 'pjax' => $pjax));
 });
 
 $app->run();

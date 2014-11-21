@@ -20,3 +20,5 @@
 
 <body>
   <div class="background"></div>
+
+  <div id="pjax-container">

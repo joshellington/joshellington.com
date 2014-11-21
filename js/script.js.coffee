@@ -10,6 +10,8 @@ $ ->
 
     e.preventDefault()
 
+  $(document).pjax('a', '#pjax-container')
+
 setBg = ->
   url = 'http://api.tumblr.com/v2/blog/nos.twnsnd.co/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?'
   background = $('.background')

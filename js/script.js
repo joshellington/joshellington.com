@@ -3,7 +3,7 @@
 
   $(function() {
     setBg();
-    return $('.open').click(function(e) {
+    $('.open').click(function(e) {
       var section;
       section = $(e.currentTarget).attr('href');
       $(e.currentTarget).hide(0, function() {
@@ -11,6 +11,7 @@
       });
       return e.preventDefault();
     });
+    return $(document).pjax('a', '#pjax-container');
   });
 
   setBg = function() {

@@ -1,5 +1,8 @@
 <?php
-require('_header.php');
+if (!$this->data['pjax']) {
+  require('_header.php');
+}
+
 require('_nav.php');
 ?>
 
@@ -20,4 +23,8 @@ require('_nav.php');
     <img src="img/josh-ellington.jpg" class="profile" alt="Josh Ellington">
   </div>
 
-<?php require('_footer.php'); ?>
+<?php
+if (!$this->data['pjax']) {
+  require('_footer.php');
+}
+?>
