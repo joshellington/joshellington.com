@@ -21,7 +21,7 @@ $ ->
     NProgress.done()
 
   $(document).on 'pjax:end', ->
-    NProgress.remove()
+    # NProgress.remove()
 
 
 setBg = ->

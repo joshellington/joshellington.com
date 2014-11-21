@@ -3,6 +3,14 @@ require 'vendor/autoload.php';
 
 $app = new \Slim\Slim();
 
+$extension = pathinfo($_SERVER['SERVER_NAME'], PATHINFO_EXTENSION);
+
+if ($extension == "com") {
+  $GLOBALS["root"] = "/shepard";
+} else {
+  $GLOBALS["root"] = "";
+}
+
 $app->get('/', function () use ($app) {
   $app->render('home.php');
 });

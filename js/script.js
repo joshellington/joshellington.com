@@ -22,9 +22,7 @@
     $(document).on('pjax:complete', function() {
       return NProgress.done();
     });
-    return $(document).on('pjax:end', function() {
-      return NProgress.remove();
-    });
+    return $(document).on('pjax:end', function() {});
   });
 
   setBg = function() {
