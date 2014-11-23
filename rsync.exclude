@@ -9,3 +9,5 @@ rsync*
 .sass-cache
 Guardfile
 Gemfile
+*.scss
+*.coffee
