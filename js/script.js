@@ -3,6 +3,7 @@
 
   $(function() {
     setBg();
+    $('.container').addClass('anim-in');
     $('.open').click(function(e) {
       var section;
       section = $(e.currentTarget).attr('href');
@@ -20,6 +21,7 @@
       return NProgress.start();
     });
     $(document).on('pjax:complete', function() {
+      $('.container').addClass('anim-in');
       return NProgress.done();
     });
     return $(document).on('pjax:end', function() {});

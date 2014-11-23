@@ -1,6 +1,8 @@
 $ ->
   setBg()
   # setNavColors()
+  
+  $('.container').addClass('anim-in')
 
   $('.open').click (e) ->
     section = $(e.currentTarget).attr('href')
@@ -18,6 +20,7 @@ $ ->
     NProgress.start()
 
   $(document).on 'pjax:complete', ->
+    $('.container').addClass('anim-in')
     NProgress.done()
 
   $(document).on 'pjax:end', ->
