@@ -17,7 +17,7 @@ require('_nav.php');
       </li>
 
       <li>
-        adidas.com
+        <a href="http://adidas.com">adidas.com</a>
         <p>Helped lead our digital team in working directly with adidas marketing, ecomm and IT teams to launch 20+ brand and ecomm experiences over a three year span. We implemented everything from A/B tests to interactive video experiences to core platform upgardes and modifications.</p>
       </li>
 
@@ -25,6 +25,10 @@ require('_nav.php');
         <a href="http://roundhouseagency.com/work/teton-gravity-research">Teton Gravity Research</a>
         <p>Acted as lead developer in reimaging TGR's web presence. Led daily status meetings and helped architect key technological elements alongside a bit of ExpressionEngine/front-end development and lots of QA.</p>
       </li>
+
+      <li>
+        <a href="http://roundhouseagency.com/work/red-bull-sound-select-at-sasquatch-2014">Red Bull Sound Select at Sasquatch! 2014</a>
+        <p>Concepted and led development for an integrated wifi captive portal for Red Bull's Sound Select presence at the Sasquatch Music Festival. Worked closely with the Red Bull teams to drive consumer sign up through redbullsoundselect.com which gave them free wifi throughout the festival.</p>
 
       <li>
         <a href="http://roundhouseagency.com/work/house-of-mutombo">House of Mutombo</a>

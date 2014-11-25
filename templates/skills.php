@@ -17,7 +17,7 @@ require('_nav.php');
       <li>nginx, Apache, SSL certificates, Capistrano, rsync</li>
       <li>Git, SVN, Teamcity</li>
       <li>Wordpress, Tumblr, Squarespace, ExpressionEngine, Craft, ActiveAdmin</li>
-      <li>Twitter API, Facebook API, Instagram API, and pretty much any other API</li>
+      <li>Twitter API, Facebook API, Instagram API, and many more</li>
       <li>Grunt, Guard, Gulp</li>
       <li>Ubuntu, zsh, CLI in general</li>
       <li>Sublime Text, Xcode</li>
