@@ -13,12 +13,12 @@ require('_nav.php');
     <ul>
       <li>
         <a href="http://roundhouseagency.com/work/xboxone-hub">Xbox One Launch</a>
-        <p>Contributed in helping strategizing, planning, developing and launching the official home for the Xbox One livestream announcement. I spearheaded and helped implement an application architecture that allowed us to serve over 15 million concurrent users at once without a single second of downtime. We worked closely with outside vendors to maintain and moderate the live social feeds within the in-house designed and developed physics-based data visualization.</p>
+        <p>Contributed in helping strategize, plan, develop and launch the official home for the Xbox One livestream announcement. I spearheaded and helped implement an application architecture that allowed us to serve over 15 million concurrent users at once without a single second of downtime. We worked closely with outside vendors to maintain and moderate the live social feeds within the in-house designed and developed physics-based data visualization.</p>
       </li>
 
       <li>
         adidas.com
-        <p>I helped lead our digital team in working directly with adidas marketing, ecomm and IT teams to launch 20+ brand and ecomm experiences over a three year span. We implemented everything from A/B tests to interactive video experiences to core platform upgardes and modifications.</p>
+        <p>Helped lead our digital team in working directly with adidas marketing, ecomm and IT teams to launch 20+ brand and ecomm experiences over a three year span. We implemented everything from A/B tests to interactive video experiences to core platform upgardes and modifications.</p>
       </li>
 
       <li>
@@ -28,7 +28,7 @@ require('_nav.php');
 
       <li>
         <a href="http://roundhouseagency.com/work/house-of-mutombo">House of Mutombo</a>
-        <p>adidas came to Roundhouse looking to launch one of its biggest releases of the year. I worked closely with our creative and strategy teams in creating the key concept and collaborated closely with the adidas.com technical team to design and implement a completely new pre-sale platform that integrated directly with their ecomm system. We owned the strategy, UX, design and development of the platform from start to finish. The platform went on to support multiple launches over the coming months.</p>
+        <p>Worked closely with our creative and strategy teams in creating the key concept and collaborated closely with the adidas.com technical team to design and implement a completely new pre-sale platform that integrated directly with their ecomm system. We owned the strategy, UX, design and development of the platform from start to finish. The platform went on to support multiple launches over the coming months.</p>
       </li>
 
       <li>
@@ -38,7 +38,7 @@ require('_nav.php');
 
       <li>
         <a href="http://roundhouseagency.com/work/adidas-iconics">adidas Iconics</a>
-        <p>We worked closely with the adidas Originals team to launch one of their largest back-to-school campaigns ever. I helped lead the digital team in executions across social, adidas.com, responsive and media experiences. We also built onsite interactive experiences at Lollapalooza that our in-house events team put on.</p>
+        <p>Worked closely with the adidas Originals team to launch one of their largest back-to-school campaigns ever. I helped lead the digital team in executions across social, adidas.com, responsive and media experiences. We also built onsite interactive experiences at Lollapalooza that our in-house events team put on.</p>
       </li>
 
       <li>
