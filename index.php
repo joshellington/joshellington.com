@@ -6,7 +6,7 @@ $app = new \Slim\Slim();
 $extension = pathinfo($_SERVER['SERVER_NAME'], PATHINFO_EXTENSION);
 
 if ($extension == "com") {
-  $GLOBALS["root"] = "/";
+  $GLOBALS["root"] = "";
 } else {
   $GLOBALS["root"] = "";
 }
