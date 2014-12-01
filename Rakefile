@@ -1,5 +1,5 @@
 ssh_user = "ellingtj@joshellington.com" # for rsync deployment
-remote_root = "/home/ellingtj/joshellington.com/shepard/" # for rsync deployment
+remote_root = "/home/ellingtj/joshellington.com/" # for rsync deployment
 bucket = "joshellington.com"
 
 task :deploy do
