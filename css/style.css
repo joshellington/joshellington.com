@@ -15,7 +15,7 @@
 /**/
 body {
   font-family: "San Francisco Display", sans-serif;
-  background: #1fcc7a;
+  background: #4074fc;
   color: white;
   padding: 50px 40px 40px;
   line-height: 1.5;
@@ -69,6 +69,8 @@ h3 {
     text-decoration: none; }
     h3 a:hover {
       border-bottom: 5px solid white; }
+  h3.inline {
+    margin-top: 40px; }
 
 h4 {
   margin: 0 0 20px;
@@ -116,28 +118,35 @@ header {
 
 header.sub {
   margin: 0 auto 40px; }
+  header.sub ul {
+    margin-left: -10px; }
   header.sub ul li {
     display: inline-block;
-    margin-right: 15px;
-    font-weight: 400; }
+    margin-right: 5px;
+    font-weight: 700; }
     header.sub ul li a {
-      border: 0; }
+      border: 0;
+      padding: 5px 10px; }
     header.sub ul li a:hover {
       color: white;
-      border-bottom: 2px solid white; }
+      background: #5986fc; }
     header.sub ul li.active a {
       color: white;
-      border-bottom: 2px solid white; }
+      background: black; }
 
 nav.home {
-  margin: 40px 0 0; }
+  margin: 40px -10px 0; }
   nav.home h3 {
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   nav.home h3 a {
     color: white;
-    border: 0; }
+    border: 0;
+    padding: 10px; }
+    nav.home h3 a img {
+      position: relative;
+      top: 4px; }
     nav.home h3 a:hover {
-      border-bottom: 2px solid white; }
+      background: black; }
 
 .container {
   position: relative;
@@ -193,6 +202,8 @@ footer {
   margin-top: 100px; }
   footer p {
     font-size: 11px; }
+  footer a {
+    border: 0; }
 
 @media only screen and (max-width: 480px), (max-height: 500px) {
   body {
@@ -209,7 +220,9 @@ footer {
     font-size: 16px; }
 
   nav.home {
-    margin: 20px 0 0; }
+    margin: 20px -10px 0; }
+    nav.home h3 {
+      margin-bottom: 10px; }
 
   img.profile {
     margin-bottom: 20px; }

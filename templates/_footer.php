@@ -1,7 +1,7 @@
   </div>
 
   <footer>
-    <p>Handcrafted in the USA with the help of Sublime Text, GitHub and all you lovely open source maintainers.</p>
+    <p>&copy; 2032 &mdash; <a href="mailto:hello@joshellington.com">hello@joshellington.com</a></p>
   </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

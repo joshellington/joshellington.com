@@ -21,9 +21,18 @@ require('_nav.php');
       <li>Grunt, Guard, Gulp</li>
       <li>Ubuntu, zsh, CLI in general</li>
       <li>Sublime Text, Xcode</li>
-      <li>Photoshop, Illustrator</li>
+      <li>Sketch, Photoshop, Illustrator</li>
       <li>Raspberry Pi, Arduino, Kinect</li>
       <li>Objective-C, Cordova (aka Phonegap)</li>
+    </ul>
+
+    <h3 class="inline">And here's a few I'm working on sharpening.</h3>
+
+    <ul>
+      <li>React, Ember, Angular</li>
+      <li>Python, Django, Go, Java</li>
+      <li>Android SDK, Tizen, Apple Watch SDK</li>
+      <li>Premiere, Reason</li>
     </ul>
   </div>
 

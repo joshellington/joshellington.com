@@ -2,6 +2,7 @@ $ ->
   setBg()
   # setNavColors()
   
+  # $('body').css('min-height', window.innerHeight + 'px')
   $('.container').addClass('anim-in')
 
   $('.open').click (e) ->

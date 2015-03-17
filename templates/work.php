@@ -23,7 +23,7 @@ require('_nav.php');
 
       <li>
         <a href="http://roundhouseagency.com/work/teton-gravity-research">Teton Gravity Research</a>
-        <p>Acted as lead developer in reimaging TGR's web presence. Led daily status meetings and helped architect key technological elements alongside a bit of ExpressionEngine/front-end development and lots of QA.</p>
+        <p>Acted as lead developer in re-imagining TGR's web presence. Led daily status meetings and helped architect key technological elements alongside a bit of ExpressionEngine/front-end development and lots of QA.</p>
       </li>
 
       <li>
