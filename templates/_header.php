@@ -14,9 +14,7 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/nprogress.css">
 
   <!--
   Oh hey there fellow view-source adventurer. This ain't the prettiest code you'll see, but it works. Email me if you want to join forces: hello@joshellington.com.
