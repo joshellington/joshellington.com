@@ -5,7 +5,7 @@ if (!$this->data['pjax']) {
 ?>
 
   <div class="container">
-    <h1>Hi. I'm Josh. I make websites, apps, strategies, logos, wireframes and other internet things in Portland, Oregon. Available for new opportunities.</h1>
+    <h1>Hi. I'm Josh. I make websites, apps, strategies, logos, wireframes and other creative things in Portland, Oregon. Available for new opportunities.</h1>
 
     <nav class="home">
       <h3><a href="<?php echo $GLOBALS["root"]; ?>/about">Get to know me <img src="img/chevron-right.svg" height="16" class="home-nav-arrow"></a></h3>
