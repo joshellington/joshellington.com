@@ -1,8 +1,9 @@
 (function() {
-  var setBg, setNavColors;
+  var getToday, setBg, setNavColors;
 
   $(function() {
     setBg();
+    getToday();
     $('.container').addClass('anim-in');
     $('.open').click(function(e) {
       var section;
@@ -50,6 +51,31 @@
       _results.push($('nav h3 a').eq(i).css('color', color));
     }
     return _results;
+  };
+
+  getToday = function() {
+    var url;
+    url = 'http://api.tumblr.com/v2/blog/whatjoshisdoingtoday.tumblr.com/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=text&callback=?';
+    return $.getJSON(url, function(d) {
+      var current_day, dd, last_posted_day, od, post, text;
+      console.log(d);
+      post = d.response.posts[0];
+      dd = new Date();
+      current_day = dd.getDate();
+      od = new Date(0);
+      od.setUTCSeconds(post.timestamp);
+      last_posted_day = od.getDate();
+      console.log(current_day, last_posted_day);
+      if (current_day === last_posted_day) {
+        text = $(post.body).text();
+      } else {
+        text = "Nothing.";
+      }
+      return $('#current-status-text').typed({
+        showCursor: false,
+        strings: [text]
+      });
+    });
   };
 
 }).call(this);

@@ -15,7 +15,7 @@
 
 /**/
 body {
-  font-family: "San Francisco Display", sans-serif;
+  font-family: "Chivo", sans-serif;
   background: #4074fc;
   color: white;
   padding: 50px 40px 40px;
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, p {
 h1 {
   margin: 0 0 10px;
   font-weight: 700;
-  font-size: 40px; }
+  font-size: 42px; }
 
 h2 {
   margin: 0 0 40px;
@@ -77,13 +77,6 @@ h4 {
   margin: 0 0 20px;
   font-size: 11px;
   text-transform: uppercase; }
-  h4 span {
-    display: inline-block;
-    width: 30px;
-    height: 11px;
-    background: #222222;
-    margin-right: 5px;
-    margin-left: -40px; }
 
 p {
   font-size: 14px;
@@ -94,11 +87,11 @@ a {
   color: white;
   text-decoration: none;
   border-bottom: 2px solid white;
-  -webkit-transition: all 100ms linear;
-  -moz-transition: all 100ms linear;
-  -ms-transition: all 100ms linear;
-  -o-transition: all 100ms linear;
-  transition: all 100ms linear; }
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out; }
   a:hover {
     color: #222222;
     border-color: #222222; }
@@ -136,18 +129,35 @@ header.sub {
       background: black; }
 
 nav.home {
-  margin: 40px -10px 0; }
+  margin: 30px -10px 0;
+  padding: 10px 0 0;
+  overflow: hidden; }
   nav.home h3 {
-    margin-bottom: 20px; }
+    display: inline;
+    float: left;
+    margin-bottom: 10px; }
   nav.home h3 a {
     color: white;
     border: 0;
     padding: 10px; }
     nav.home h3 a img {
       position: relative;
-      top: 4px; }
+      top: 1px; }
     nav.home h3 a:hover {
       background: black; }
+
+.current-status {
+  padding: 40px 0 0;
+  clear: both; }
+  .current-status h4 {
+    margin: 0;
+    padding: 0 0 5px;
+    font-size: 14px;
+    text-transform: none; }
+    .current-status h4 a {
+      border: 0; }
+  .current-status h2 {
+    font-weight: bold; }
 
 .container {
   position: relative;
@@ -198,11 +208,17 @@ img {
     margin-bottom: 40px; }
 
 footer {
-  position: relative;
+  position: fixed;
   z-index: 1;
-  margin-top: 100px; }
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  opacity: 0.3; }
+  footer:hover {
+    opacity: 1; }
   footer p {
-    font-size: 11px; }
+    font-size: 11px;
+    font-weight: bold; }
   footer a {
     border: 0; }
 
@@ -223,6 +239,8 @@ footer {
   nav.home {
     margin: 20px -10px 0; }
     nav.home h3 {
+      float: none;
+      display: block;
       margin-bottom: 10px; }
 
   img.profile {
@@ -235,4 +253,10 @@ footer {
     margin: 0 auto 20px; }
     header.sub ul li {
       width: 49%;
-      margin: 0 0 10px 0; } }
+      margin: 0 0 10px 0; }
+
+  footer {
+    opacity: 1;
+    margin-top: 40px;
+    position: relative;
+    padding: 20px; } }
