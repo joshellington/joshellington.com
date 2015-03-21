@@ -18,7 +18,7 @@ require('_nav.php');
       <li>I've collaborated with a diverse set of roles, from account teams to HR departments to client stakeholders.</li>
       <li>I don't bullshit; I disdain unproductive meetings; I despise moving slow.</li>
       <li>I like to design in code; I enjoy rapidly built prototypes; I am always hungry for more research and opinions to help shape my perspectives.</li>
-      <li>In my personal time, I enjoy photography, golf, road trips, cooking and discovering new music.</li>
+      <li>In my personal time, I enjoy <a href="https://www.flickr.com/photos/joshellington">photography</a>, golf, road trips, cooking, and <a href="http://soundcloud.com/dynamicsuperior">making</a> music.</li>
       <li>I'm currently interested in product management, exploring new user experience interfaces and testing product theories.</li>
     </ul>
   </div>
