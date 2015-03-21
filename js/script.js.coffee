@@ -63,7 +63,7 @@ getToday = ->
     if current_day is last_posted_day
       text = $(post.body).text()
     else
-      text = "Nothing."
+      text = "Haven't posted anything today. Stay tuned."
 
     $('#current-status-text').typed({
       showCursor: false

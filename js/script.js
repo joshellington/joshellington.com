@@ -69,7 +69,7 @@
       if (current_day === last_posted_day) {
         text = $(post.body).text();
       } else {
-        text = "Nothing.";
+        text = "Haven't posted anything today. Stay tuned.";
       }
       return $('#current-status-text').typed({
         showCursor: false,
