@@ -16,8 +16,8 @@ if (!$this->data['pjax']) {
     </nav>
 
     <div class="current-status">
-      <h4><a href="http://whatjoshisdoingtoday.tumblr.com">What I'm working on today:</a></h4>
-      <h2 id="current-status-text"></h2>
+      <h4><a href="http://www.last.fm/user/joshellington">What I'm listening to today:</a></h4>
+      <h2 id="current-status-text"><span class="image"></span><span class="text"></span></h2>
     </div>
   </div>
 

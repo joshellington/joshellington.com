@@ -149,6 +149,12 @@ nav.home {
 .current-status {
   padding: 30px 0 0;
   clear: both; }
+  .current-status a {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0; }
+  .current-status img {
+    padding-right: 10px; }
   .current-status h4 {
     margin: 0;
     padding: 0 0 5px;
@@ -243,6 +249,9 @@ footer {
       display: block;
       margin-bottom: 10px; }
 
+  .current-status img {
+    display: none; }
+
   img.profile {
     margin-bottom: 20px; }
 
@@ -259,4 +268,4 @@ footer {
     opacity: 1;
     margin-top: 40px;
     position: relative;
-    padding: 20px; } }
+    padding: 0; } }

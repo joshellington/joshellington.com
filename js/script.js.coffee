@@ -1,7 +1,8 @@
 $ ->
   setBg()
   # setBgColor()
-  getToday()
+  # getToday()
+  getListening()
 
   $('.container').addClass('anim-in')
 
@@ -88,5 +89,20 @@ getToday = ->
     $('#current-status-text').typed({
       showCursor: false
       strings: [text]
+    })
+
+getListening = ->
+  url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=joshellington&api_key=bd5217f8dfd32dd746cdc01a703aafd2&format=json'
+  
+  $.getJSON url, (d) ->
+    track = d.recenttracks.track[0]
+
+    image = "<a href='" + track.url + "'><img src='" + track.image[0]["#text"] + "'></a> "
+    song = track.name + " &mdash; " + track.artist["#text"];
+    
+    $('#current-status-text span.image').html(image)
+    $('#current-status-text span.text').typed({
+      showCursor: false
+      strings: [song]
     })
 

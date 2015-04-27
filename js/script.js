@@ -1,9 +1,9 @@
 (function() {
-  var getToday, setBg, setBgColor, setNavColors;
+  var getListening, getToday, setBg, setBgColor, setNavColors;
 
   $(function() {
     setBg();
-    getToday();
+    getListening();
     $('.container').addClass('anim-in');
     $('.open').click(function(e) {
       var section;
@@ -123,6 +123,22 @@
       return $('#current-status-text').typed({
         showCursor: false,
         strings: [text]
+      });
+    });
+  };
+
+  getListening = function() {
+    var url;
+    url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=joshellington&api_key=bd5217f8dfd32dd746cdc01a703aafd2&format=json';
+    return $.getJSON(url, function(d) {
+      var image, song, track;
+      track = d.recenttracks.track[0];
+      image = "<a href='" + track.url + "'><img src='" + track.image[0]["#text"] + "'></a> ";
+      song = track.name + " &mdash; " + track.artist["#text"];
+      $('#current-status-text span.image').html(image);
+      return $('#current-status-text span.text').typed({
+        showCursor: false,
+        strings: [song]
       });
     });
   };
