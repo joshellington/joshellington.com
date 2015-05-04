@@ -97,7 +97,11 @@ getListening = ->
   $.getJSON url, (d) ->
     track = d.recenttracks.track[0]
 
-    image = "<a href='" + track.url + "'><img src='" + track.image[0]["#text"] + "'></a> "
+    unless track.image[0]["#text"] == ''
+      image = "<a href='" + track.url + "'><img src='" + track.image[0]["#text"] + "'></a> "
+    else
+      image = ''
+
     song = track.name + " &mdash; " + track.artist["#text"];
     
     $('#current-status-text span.image').html(image)

@@ -133,7 +133,11 @@
     return $.getJSON(url, function(d) {
       var image, song, track;
       track = d.recenttracks.track[0];
-      image = "<a href='" + track.url + "'><img src='" + track.image[0]["#text"] + "'></a> ";
+      if (track.image[0]["#text"] !== '') {
+        image = "<a href='" + track.url + "'><img src='" + track.image[0]["#text"] + "'></a> ";
+      } else {
+        image = '';
+      }
       song = track.name + " &mdash; " + track.artist["#text"];
       $('#current-status-text span.image').html(image);
       return $('#current-status-text span.text').typed({
