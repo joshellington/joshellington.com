@@ -5,7 +5,7 @@
 /**/
 
 $black: #222;
-$accent: #4074FC;
+$accent: rgb(190, 84, 66);
 $contrast_accent: #fff;
 $light_accent: #40FFA5;
 $width: 650px;
@@ -28,7 +28,7 @@ $font: 'Chivo', sans-serif;
     transition: $transition-property $transition-time $method;
 }
 
-// 
+//
 
 body {
   font-family: $font;

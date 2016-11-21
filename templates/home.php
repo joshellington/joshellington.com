@@ -5,15 +5,15 @@ if (!$this->data['pjax']) {
 ?>
 
   <div class="container">
-    <h1>Hi. I'm Josh. I make websites, apps, strategies, logos, wireframes and other creative things in Portland, Oregon. Available for new opportunities.</h1>
+    <h1>Hi. I'm Josh and I make things for the internet. Currently building products at <a href="http://nursegrid.com">NurseGrid</a>.</h1>
 
-    <nav class="home">
+    <!-- <nav class="home">
       <h3><a href="<?php echo $GLOBALS["root"]; ?>/about">Get to know me <img src="img/chevron-right.svg" height="16" class="home-nav-arrow"></a></h3>
       <h3><a href="<?php echo $GLOBALS["root"]; ?>/projects">Check out my pet projects <img src="img/chevron-right.svg" height="16" class="home-nav-arrow"></a></h3>
       <h3><a href="<?php echo $GLOBALS["root"]; ?>/work">View my work <img src="img/chevron-right.svg" height="16" class="home-nav-arrow"></a></h3>
       <h3><a href="<?php echo $GLOBALS["root"]; ?>/skills">See my skills <img src="img/chevron-right.svg" height="16" class="home-nav-arrow"></a></h3>
       <h3><a href="<?php echo $GLOBALS["root"]; ?>/hello">Say hello <img src="img/chevron-right.svg" height="16" class="home-nav-arrow"></a></h3>
-    </nav>
+    </nav> -->
 
     <div class="current-status">
       <h4><a href="http://www.last.fm/user/joshellington">What I'm listening to today:</a></h4>

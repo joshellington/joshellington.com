@@ -4,19 +4,19 @@
 /**/
 /**/
 ::-moz-selection {
-  background: #222222;
+  background: #222;
   color: white;
   text-shadow: none; }
 
 ::selection {
-  background: #222222;
+  background: #222;
   color: white;
   text-shadow: none; }
 
 /**/
 body {
   font-family: "Chivo", sans-serif;
-  background: #4074fc;
+  background: #be5442;
   color: white;
   padding: 50px 40px 40px;
   line-height: 1.5;
@@ -45,7 +45,7 @@ hr {
   border: 0;
   width: 100%;
   height: 0px;
-  background: #222222; }
+  background: #222; }
 
 h1, h2, h3, h4, h5, p {
   margin: 0;
@@ -93,17 +93,17 @@ a {
   -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out; }
   a:hover {
-    color: #222222;
-    border-color: #222222; }
+    color: #222;
+    border-color: #222; }
   a.open {
     background: white;
     font-size: 11px;
     text-transform: uppercase;
-    color: #222222;
+    color: #222;
     text-decoration: none;
     padding: 5px; }
     a.open:hover {
-      background: #222222;
+      background: #222;
       color: white; }
 
 header {
@@ -123,7 +123,7 @@ header.sub {
       padding: 5px 10px; }
     header.sub ul li a:hover {
       color: white;
-      background: #5986fc; }
+      background: #c56555; }
     header.sub ul li.active a {
       color: white;
       background: black; }
