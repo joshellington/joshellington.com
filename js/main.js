@@ -1,16 +1,25 @@
 $(function() {
+  getBg();
   getListening();
 
   setInterval(function() {
     getListening();
-  }, 25000);
+    getBg();
+  }, 10000);
 });
 
+var totalBgPosts = null;
+
 function getBg() {
-  var url = 'http://api.tumblr.com/v2/blog/nos.twnsnd.co/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
+  var url = 'http://api.tumblr.com/v2/blog/visualhunt.tumblr.com/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
+  if (totalBgPosts) {
+    url = url + '&offset=' + Math.floor(Math.random() * totalBgPosts);
+  }
+
   $.getJSON(url, function(d) {
+    totalBgPosts = d.response.blog.total_posts;
     var post = d.response.posts[Math.floor(Math.random() * d.response.posts.length)];
-    $('body').css('background-image', 'url(' + post.photos[0].original_size.url + ')');
+    $('.bg').css('background-image', 'url(' + post.photos[0].original_size.url + ')');
   });
 }
 
