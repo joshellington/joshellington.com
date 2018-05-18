@@ -11,7 +11,8 @@ $(function() {
 var totalBgPosts = null;
 
 function getBg() {
-  var url = 'http://api.tumblr.com/v2/blog/nos.twnsnd.co/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
+  // http://eyescapemagazine.tumblr.com/
+  var url = 'http://api.tumblr.com/v2/blog/covetarts.tumblr.com/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
   if (totalBgPosts) {
     url = url + '&offset=' + Math.floor(Math.random() * totalBgPosts);
   }
@@ -34,7 +35,7 @@ function getListening() {
     } else {
       image = '';
     }
-    song = "<a href='" + track.url + "'> " + track.name + "</a>";
+    song = "<a href='" + track.url + "'> " + track.name + "<h5>" + track.artist["#text"] + "</h5></a>";
     $('span#listen').html(song);
   });
 }

@@ -20,7 +20,8 @@ body {
   font-size: 14px;
   background-size: cover;
   -webkit-font-smoothing: antialiased;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+}
 
 .bg {
   position: fixed;
@@ -42,29 +43,39 @@ h1 {
 
 h2 {
   font-size: 26px;
-  line-height: 29px; }
+}
+
+h2 span {
+  display: block;
+}
+
+h2 h5 {
+  font-size: 18px;
+  display: block;
+}
 
 h3 {
-  font-size: 16px;
-  margin: 500px 0 0; }
+  font-size: 18px;
+  margin-top: 100px;
+}
 
 a {
   color: #222;
   text-decoration: none;
-  border-bottom: 5px solid #222; }
+  border-bottom: 5px dotted #222; }
   a:hover {
-    border-bottom: 5px dotted #222; }
+    border-bottom: 5px solid #222; }
 
 .content {
   display: inline-block;
-  padding: 35px;
+  padding: 30px;
   max-width: 500px;
   z-index: 1;
   position: relative; }
 
 .box {
   display: block;
-  width: 35px;
+  width: 30px;
   height: 5px;
   position: absolute;
   top: 0;
@@ -72,3 +83,30 @@ a {
   background: #222; }
   .box:hover {
     background: white; }
+
+.trip-cta {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background: #222;
+  color: #ffffea;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 0;
+  z-index: 5;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+}
+
+.trip-cta:hover {
+  border: 0;
+  background-image: url(terrain.jpg);
+  background-size: 100%;
+  color: #222;
+}
+
+.trip-cta span {
+  display: block;
+}
