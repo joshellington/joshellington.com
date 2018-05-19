@@ -1,0 +1,1 @@
+scp -r index.html css/ js/ ellingtj@joshellington.com:/home/ellingtj/joshellington.com/
