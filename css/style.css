@@ -14,7 +14,7 @@
 /**/
 body {
   font-family: "Archivo Black", sans-serif;
-  background: #ffffea;
+  background: #f2f2f2;
   color: #222;
   line-height: 1.3;
   font-size: 14px;
@@ -27,7 +27,7 @@ body {
   position: fixed;
   background-size: cover;
   background-position: center;
-  opacity: 0.05;
+  opacity: 0.1;
   width: 100%;
   height: 100%;
   z-index: 0; }
@@ -63,7 +63,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid #222; }
   a:hover {
-    border-bottom: 1px solid #ffffea; }
+    border-bottom: 1px solid #f2f2f2; }
 
 .content {
   width: 300px;
@@ -92,19 +92,18 @@ a {
   display: block;
   padding: 15px 30px;
   background: #222;
-  color: #ffffea;
+  color: #f2f2f2;
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
-  border: 0;
+  border: 1px solid transparent;
   z-index: 5;
   margin: 0 0 15px;
 }
 
-.trip-cta:hover {
-  border: 0;
-  background-image: url(terrain.jpg);
-  background-size: 100%;
+.trip-cta:hover, .trip-cta:active, .trip-cta:focus {
+  border: 1px solid #222;
+  background: transparent;
   color: #222;
 }
 

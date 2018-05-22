@@ -12,7 +12,9 @@ var totalBgPosts = null;
 
 function getBg() {
   // http://eyescapemagazine.tumblr.com/
-  var url = 'http://api.tumblr.com/v2/blog/covetarts.tumblr.com/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
+  // http://loworbittourist.tumblr.com/
+  // covetarts.tumblr.com
+  var url = 'http://api.tumblr.com/v2/blog/loworbittourist.tumblr.com/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
   if (totalBgPosts) {
     url = url + '&offset=' + Math.floor(Math.random() * totalBgPosts);
   }
