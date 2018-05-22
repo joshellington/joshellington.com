@@ -25,7 +25,7 @@ body {
 
 .bg {
   position: fixed;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   opacity: 0.05;
   width: 100%;
@@ -55,23 +55,27 @@ h2 h5 {
 }
 
 h3 {
-  font-size: 18px;
-  margin-top: 100px;
+  font-size: 12px;
 }
 
 a {
   color: #222;
   text-decoration: none;
-  border-bottom: 5px dotted #222; }
+  border-bottom: 1px solid #222; }
   a:hover {
-    border-bottom: 5px solid #222; }
+    border-bottom: 1px solid #ffffea; }
 
 .content {
+  width: 300px;
   display: inline-block;
-  padding: 30px;
-  max-width: 500px;
+  padding: 15px;
   z-index: 1;
-  position: relative; }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .box {
   display: block;
@@ -85,19 +89,16 @@ a {
     background: white; }
 
 .trip-cta {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 15px;
+  display: block;
+  padding: 15px 30px;
   background: #222;
   color: #ffffea;
   text-align: center;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
   border: 0;
   z-index: 5;
-  transform: rotate(-90deg);
-  transform-origin: bottom right;
+  margin: 0 0 15px;
 }
 
 .trip-cta:hover {
@@ -109,4 +110,10 @@ a {
 
 .trip-cta span {
   display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .trip-cta {
+    font-size: 16px;
+  }
 }
