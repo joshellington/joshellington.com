@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="css/style.css?va09s8df098sd90">
   </head>
   <body>
-    <table contenteditable="true">
+    <table>
       <tr>
         <td>NAME</td>
-        <td>Josh Ellington</td>
+        <td><span>Josh Ellington</span></td>
       </tr>
       <tr>
         <td>HEADQUARTERS</td>
@@ -26,7 +26,7 @@
       </tr>
       <tr>
         <td>SPECIALTY</td>
-        <td>Cyber</td>
+        <td><span>Cyber</span></td>
       </tr>
       <tr>
         <td>OCCUPATION</td>
@@ -34,18 +34,16 @@
       </tr>
       <tr>
         <td>INTERESTS</td>
-        <td>Motorcycles, magazines, forests, sleeping outside</td>
+        <td><span>Motorcycles</span>, <span>new-to-me music</span>, <span>forests</span>, <span>photography</span>, <span>sleeping outside</span></td>
       </tr>
     </table>
 
-    <img src="josh.jpg" width="300" class="me">
+    <div id="hover"></div>
 
-    <script>
-      var img = document.getElementsByTagName('img')[0];
-      setInterval(function() {
-        img.classList.toggle('color');
-      }, 300);
-    </script>
+    <!-- <img src="josh.jpg" width="300" class="me"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/3.0.0-beta.3/cash.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
       var _gaq=[['_setAccount','UA-3355044-4'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;

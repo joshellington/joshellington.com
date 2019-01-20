@@ -1,1 +1,1 @@
-scp -r index.html css/ josh.jpg ellingtj@joshellington.com:/home/ellingtj/joshellington.com/
+scp -r index.html css/ img/ js/ ellingtj@joshellington.com:/home/ellingtj/joshellington.com/

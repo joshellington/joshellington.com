@@ -1,43 +1,21 @@
 $(function() {
-  getBg();
-  getListening();
+  var mouse_x = getRandomInt(150, 300);
+  var mouse_y = getRandomInt(20, 120);
 
-  setInterval(function() {
-    getListening();
-    getBg();
-  }, 10000);
+  $('td span').on('mousemove', function(e) {
+    console.log(e);
+    var ele = $(e.target);
+    var image = 'img/'+ele.text().toLowerCase()+'.jpg';
+    $('#hover').html('<img src="'+image+'">').css('top', e.clientY - mouse_y).css('left', e.clientX + mouse_x);
+  }).on('mouseleave', function(e) {
+    $('#hover').empty();
+    mouse_x = getRandomInt(150, 300);
+    mouse_y = getRandomInt(20, 120);
+  });
 });
 
-var totalBgPosts = null;
-
-function getBg() {
-  // http://eyescapemagazine.tumblr.com/
-  // http://loworbittourist.tumblr.com/
-  // covetarts.tumblr.com
-  var url = 'http://api.tumblr.com/v2/blog/loworbittourist.tumblr.com/posts?api_key=Zx4n6ownkgGXpLT7ncRmPBgVMfjZFarPaVI7esQEqnrj4AO5qK&type=photo&callback=?';
-  if (totalBgPosts) {
-    url = url + '&offset=' + Math.floor(Math.random() * totalBgPosts);
-  }
-
-  $.getJSON(url, function(d) {
-    totalBgPosts = d.response.blog.total_posts;
-    var post = d.response.posts[Math.floor(Math.random() * d.response.posts.length)];
-    $('.bg').css('background-image', 'url(' + post.photos[0].original_size.url + ')');
-  });
-}
-
-function getListening() {
-  var url;
-  url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=joshellington&api_key=bd5217f8dfd32dd746cdc01a703aafd2&format=json';
-  return $.getJSON(url, function(d) {
-    var image, song, track;
-    track = d.recenttracks.track[0];
-    if (track.image[0]["#text"] !== '') {
-      image = "<a href='" + track.url + "'><img src='" + track.image[0]["#text"] + "'></a> ";
-    } else {
-      image = '';
-    }
-    song = "<a href='" + track.url + "'> " + track.name + "<h5>" + track.artist["#text"] + "</h5></a>";
-    $('span#listen').html(song);
-  });
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }

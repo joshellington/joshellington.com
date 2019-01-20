@@ -39,12 +39,17 @@ img.me {
   float: right;
 }
 
-img {
+/*img {
   filter: grayscale(100%);
 }
 
 img:hover, img.color {
   filter: grayscale(0);
+}*/
+
+table {
+  z-index: 1;
+  position: relative;
 }
 
 table:focus {
@@ -57,4 +62,15 @@ table td {
 
 table td:first-child {
   padding-right: 20px;
+}
+
+#hover {
+  position: absolute;
+  max-width: 400px;
+  z-index: 0;
+}
+
+#hover img {
+  display: block;
+  max-width: 100%;
 }
