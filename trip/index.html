@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>_</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/trip/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css?v2309fjaisdj">
+</head>
+<body>
+
+  <nav>
+    <a href="/trip">MAP</a>
+    <a href="notes.html">NOTES</a>
+    <a href="photos.html">PHOTOS</a>
+    <a href="setup.html">SETUP</a>
+  </nav>
+
+  <div id="meta">
+    <p>LAST UPDATED: <span id="last-update"></span></p>
+  </div>
+
+  <div id="resting" class="current-status">Currently: Resting</div>
+  <div id="riding" class="current-status">Currently: Riding</div>
+
+  <div id="map"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.0/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+
+  <script type="text/template" id="currentPoint">
+    <span><%= item.tracked_at_moment.format('MM/DD/YY HH:mm:ss') %></span>
+    <span>
+      <a target="_blank" href="https://google.com/maps?q=<%= item.lat %>,<%= item.lng %>">
+        <%= item.lat %> <%= item.lng %>
+      </a><br><span><%= item.currentElevation %> ft</span>
+    </span>
+  </script>
+
+  <script type="text/template" id="pastPoint">
+    <span><%= item.tracked_at_moment.format('MM/DD/YY HH:mm:ss') %></span>
+    <span>
+      <a target="_blank" href="https://google.com/maps?q=<%= item.lat %>,<%= item.lng %>">
+        <%= item.lat %>, <%= item.lng %>
+      </a>
+    </span>
+  </script>
+
+  <script src="js/map-style.js?as5d456f4sd561"></script>
+  <script src="js/map.js?as5d456f4sd561"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMHL3cpTLMgiAzmvFo7dTYvOcIDWgORSE&callback=init" async defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121410297-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121410297-1');
+  </script>
+</body>
+</html>
