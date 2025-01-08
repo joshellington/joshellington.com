@@ -1,1 +1,0 @@
-scp -r index.html *.jpg ellingtj@joshellington.com:/home/ellingtj/joshellington.com/
